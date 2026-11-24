@@ -1,0 +1,5 @@
+[var name:"quantity" value:2 /]
+# Cost calculator
+[Range value:quantity min:0 max:10 /]
+Quantity: [Display value:quantity /]
+Total: [Display value:`quantity * 5` /]

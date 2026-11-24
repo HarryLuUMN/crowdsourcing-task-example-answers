@@ -1,0 +1,20 @@
+{
+  "data": {
+    "url": "/sales-data.json"
+  },
+  "title": "Sales by category",
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Category"
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "sales",
+      "type": "quantitative",
+      "title": "Total sales"
+    }
+  }
+}

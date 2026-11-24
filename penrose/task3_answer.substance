@@ -1,0 +1,8 @@
+Set A, B
+Point p, q
+Disjoint(A, B)
+In(p, A)
+NotIn(p, B)
+In(q, B)
+NotIn(q, A)
+AutoLabel All

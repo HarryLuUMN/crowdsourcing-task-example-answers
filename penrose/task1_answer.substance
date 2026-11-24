@@ -1,0 +1,4 @@
+Set A, B, C
+Subset(A, B)
+Subset(B, C)
+AutoLabel All

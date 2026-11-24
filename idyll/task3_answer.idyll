@@ -1,0 +1,46 @@
+[data name:"sales" source:"sales-data.json" /]
+[var name:"category" value:"Books" /]
+[var name:"threshold" value:150 /]
+[var name:"stage" value:0 /]
+[derived name:"selected" value:`sales.filter(row => row.category === category)` /]
+[derived name:"chartRows" value:`stage < 2 ? sales : selected` /]
+[derived name:"reference" value:`stage === 2 ? sales.filter(row => row.category === "Books").map(row => ({month:row.month, sales:sales.filter(item => item.month === row.month).reduce((sum,item) => sum + item.sales,0) / sales.filter(item => item.month === row.month).length})) : []` /]
+[derived name:"highlighted" value:`stage === 3 ? selected.filter(row => row.sales > threshold) : []` /]
+[derived name:"focus" value:`stage === 1 ? category : ""` /]
+[derived name:"stageName" value:`["Overview", "Focus", "Average", "Threshold"][stage]` /]
+# A Closer Look at Monthly Sales
+
+A single chart can answer different questions depending on what we choose to emphasize. Scroll through this article to examine the same sales data from four perspectives.
+
+[Scroller step:stage]
+[Step index:0]
+## 1. See the Whole Picture
+
+Begin with the monthly sales trends for all product categories. Comparing the lines reveals how the categories change over the same period.
+[/Step]
+[Step index:1]
+## 2. Focus on One Category
+
+Choose a category to examine more closely. Emphasize its sales trend while keeping the other categories visible as context.
+[/Step]
+[Step index:2]
+## 3. Compare with the Monthly Average
+
+Compare the selected category with the average sales across all categories in each month. The average provides a reference for identifying months when the selected category performs above or below the broader pattern.
+[/Step]
+[Step index:3]
+## 4. Find Months Above a Threshold
+
+Choose a sales threshold and identify the selected category’s months that exceed it. Changing the category or threshold should immediately update the highlighted observations.
+[/Step]
+[Pinned]
+[Select value:category options:`["Books", "Games", "Music"]` /]
+[Range value:threshold min:0 max:500 step:10 /]
+[Display role:"stage" value:stageName /]
+[Chart data:chartRows type:"line" x:"month" y:"sales" color:"category" focus:focus reference:reference highlight:highlighted /]
+[/Pinned]
+[/Scroller]
+
+## Revisit the Story
+
+Scroll back to an earlier section to revisit that perspective. Your category and threshold selections should remain available throughout the article.

@@ -1,0 +1,37 @@
+[data name:"sales" source:"sales-data.json" /]
+[var name:"category" value:"All" /]
+[var name:"minimum" value:0 /]
+[derived name:"rows" value:`sales.filter(row => (category === "All" || row.category === category) && row.sales >= minimum)` /]
+[derived name:"total" value:`rows.reduce((sum, row) => sum + row.sales, 0)` /]
+[derived name:"average" value:`rows.length ? total / rows.length : "—"` /]
+# Exploring Sales Across Categories
+
+Monthly sales can vary considerably across product categories. A useful comparison starts by choosing which records to examine.
+
+## Choose Your View
+
+Select a product category and a minimum sales value. A record should appear only when it matches both selections.
+
+[Select value:category options:`["All", "Books", "Games", "Music"]` /]
+[Range value:minimum min:0 max:500 step:10 /]
+
+## Inspect the Records
+
+The table shows the records included in the current selection. The chart presents those same records over time, making individual observations easier to compare.
+
+[Table data:rows /]
+[Chart data:rows type:"point" x:"month" y:"sales" color:"category" /]
+
+## Summarize the Selection
+
+The number of matching records, total sales, and average sales describe the current selection. These summaries should change whenever either control changes.
+
+Matching records: [Display role:"count" value:`rows.length` format:".0f" /]
+Total sales: [Display role:"total" value:total format:".2f" /]
+Average sales: [Display role:"average" value:average format:".2f" /]
+
+## When Nothing Matches
+
+Some combinations of category and minimum sales may produce no matching records. In that case, the article should clearly explain that there are no results.
+
+[Conditional if:`rows.length === 0`]No matching records.[/Conditional]

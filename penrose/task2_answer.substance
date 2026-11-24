@@ -1,0 +1,5 @@
+Set A, B, C
+Intersecting(A, B)
+Disjoint(A, C)
+Disjoint(B, C)
+AutoLabel All

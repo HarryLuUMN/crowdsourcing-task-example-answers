@@ -1,0 +1,86 @@
+[
+  {
+    "dsl": "knitscript",
+    "level": 1,
+    "task_id": "knitscript-plain-v1",
+    "title": "Task 01 \u2014 Plain swatch",
+    "file": "knitscript/task1_answer.ks"
+  },
+  {
+    "dsl": "knitscript",
+    "level": 2,
+    "task_id": "knitscript-ribbed-v1",
+    "title": "Task 02 \u2014 Ribbed swatch",
+    "file": "knitscript/task2_answer.ks"
+  },
+  {
+    "dsl": "knitscript",
+    "level": 3,
+    "task_id": "knitscript-striped-v1",
+    "title": "Task 03 \u2014 Striped swatch",
+    "file": "knitscript/task3_answer.ks"
+  },
+  {
+    "dsl": "idyll",
+    "level": 1,
+    "task_id": "idyll-calculator-v1",
+    "title": "Task 01 \u2014 Interactive calculator",
+    "file": "idyll/task1_answer.idyll"
+  },
+  {
+    "dsl": "idyll",
+    "level": 2,
+    "task_id": "idyll-explorer-v2",
+    "title": "Task 02 \u2014 Linked sales explorer",
+    "file": "idyll/task2_answer.idyll"
+  },
+  {
+    "dsl": "idyll",
+    "level": 3,
+    "task_id": "idyll-story-v2",
+    "title": "Task 03 \u2014 Scroll-driven sales story",
+    "file": "idyll/task3_answer.idyll"
+  },
+  {
+    "dsl": "penrose",
+    "level": 1,
+    "task_id": "penrose-nested-v1",
+    "title": "Task 01 \u2014 Nested sets",
+    "file": "penrose/task1_answer.substance"
+  },
+  {
+    "dsl": "penrose",
+    "level": 2,
+    "task_id": "penrose-overlap-v1",
+    "title": "Task 02 \u2014 Overlapping sets",
+    "file": "penrose/task2_answer.substance"
+  },
+  {
+    "dsl": "penrose",
+    "level": 3,
+    "task_id": "penrose-points-v1",
+    "title": "Task 03 \u2014 Points and sets",
+    "file": "penrose/task3_answer.substance"
+  },
+  {
+    "dsl": "vega-lite",
+    "level": 1,
+    "task_id": "vega-lite-bar-v1",
+    "title": "Task 01 \u2014 Bar chart",
+    "file": "vegalite/task1_answer.json"
+  },
+  {
+    "dsl": "vega-lite",
+    "level": 2,
+    "task_id": "vega-lite-line-v1",
+    "title": "Task 02 \u2014 Line chart",
+    "file": "vegalite/task2_answer.json"
+  },
+  {
+    "dsl": "vega-lite",
+    "level": 3,
+    "task_id": "vega-lite-scatter-v1",
+    "title": "Task 03 \u2014 Scatterplot",
+    "file": "vegalite/task3_answer.json"
+  }
+]

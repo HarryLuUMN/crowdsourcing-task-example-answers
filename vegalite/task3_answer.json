@@ -1,0 +1,32 @@
+{
+  "data": {
+    "url": "/sales-data.json"
+  },
+  "title": "Monthly sales",
+  "transform": [
+    {
+      "filter": "datum.sales >= 120"
+    },
+    {
+      "calculate": "utcmonth(toDate(datum.month)) + 1",
+      "as": "month_number"
+    }
+  ],
+  "mark": "point",
+  "encoding": {
+    "x": {
+      "field": "month_number",
+      "type": "quantitative",
+      "title": "Month number"
+    },
+    "y": {
+      "field": "sales",
+      "type": "quantitative",
+      "title": "Sales"
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal"
+    }
+  }
+}
