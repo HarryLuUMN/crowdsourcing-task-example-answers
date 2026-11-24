@@ -1,0 +1,533 @@
+{
+  "verified_at_utc": "2026-11-24T19:26:16.628039+00:00",
+  "platform_repository": "https://github.com/HarryLuUMN/crowdsource-coding-platform",
+  "platform_commit": "95692d6bba95f7298734aa701e34adfe0ebe0035",
+  "platform_tracked_changes": false,
+  "passed": true,
+  "task_count": 12,
+  "passed_tasks": 12,
+  "results": [
+    {
+      "dsl": "knitscript",
+      "level": 1,
+      "task_id": "knitscript-plain-v1",
+      "title": "Task 01 \u2014 Plain swatch",
+      "file": "knitscript/task1_answer.ks",
+      "sha256": "b5400b6348640fa44cf8578e47eb7d423a503575e9bbacf9feb58607f1af43dd",
+      "http_status": 200,
+      "compiled": true,
+      "passed": true,
+      "passed_count": 6,
+      "total_count": 6,
+      "checks": [
+        {
+          "id": "compiles",
+          "label": "Program compiles",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "cast-on",
+          "label": "Secure cast-on",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "rows",
+          "label": "Six complete ten-stitch fabric rows",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "beds",
+          "label": "Required stitch-bed pattern",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "carriers",
+          "label": "Required yarn sections",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "finish",
+          "label": "Carrier setup and finishing",
+          "passed": true,
+          "message": "Requirement satisfied."
+        }
+      ]
+    },
+    {
+      "dsl": "knitscript",
+      "level": 2,
+      "task_id": "knitscript-ribbed-v1",
+      "title": "Task 02 \u2014 Ribbed swatch",
+      "file": "knitscript/task2_answer.ks",
+      "sha256": "182bd87b23f82397ffd907e00bf593db7969bf14829ca12b9815e7681b54a389",
+      "http_status": 200,
+      "compiled": true,
+      "passed": true,
+      "passed_count": 6,
+      "total_count": 6,
+      "checks": [
+        {
+          "id": "compiles",
+          "label": "Program compiles",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "cast-on",
+          "label": "Secure cast-on",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "rows",
+          "label": "Six complete ten-stitch fabric rows",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "beds",
+          "label": "Required stitch-bed pattern",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "carriers",
+          "label": "Required yarn sections",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "finish",
+          "label": "Carrier setup and finishing",
+          "passed": true,
+          "message": "Requirement satisfied."
+        }
+      ]
+    },
+    {
+      "dsl": "knitscript",
+      "level": 3,
+      "task_id": "knitscript-striped-v1",
+      "title": "Task 03 \u2014 Striped swatch",
+      "file": "knitscript/task3_answer.ks",
+      "sha256": "601c0d97c50b2726f58ba625652f77fd3498ae28db242c6c43c26805ec8a28eb",
+      "http_status": 200,
+      "compiled": true,
+      "passed": true,
+      "passed_count": 6,
+      "total_count": 6,
+      "checks": [
+        {
+          "id": "compiles",
+          "label": "Program compiles",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "cast-on",
+          "label": "Secure cast-on",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "rows",
+          "label": "Six complete ten-stitch fabric rows",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "beds",
+          "label": "Required stitch-bed pattern",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "carriers",
+          "label": "Required yarn sections",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "finish",
+          "label": "Carrier setup and finishing",
+          "passed": true,
+          "message": "Requirement satisfied."
+        }
+      ]
+    },
+    {
+      "dsl": "idyll",
+      "level": 1,
+      "task_id": "idyll-calculator-v1",
+      "title": "Task 01 \u2014 Interactive calculator",
+      "file": "idyll/task1_answer.idyll",
+      "sha256": "d778990cf440535c0e0696318cd5ec752d0d0041f60b80b42f4e803affd39f35",
+      "http_status": 200,
+      "compiled": true,
+      "passed": true,
+      "passed_count": 2,
+      "total_count": 2,
+      "checks": [
+        {
+          "id": "control",
+          "label": "Input control and range",
+          "passed": true,
+          "message": "Bind a control to a declared variable with the requested minimum and maximum."
+        },
+        {
+          "id": "reactive-output",
+          "label": "Reactive output across the input range",
+          "passed": true,
+          "message": "Required output verified at every integer input in the specified range."
+        }
+      ]
+    },
+    {
+      "dsl": "idyll",
+      "level": 2,
+      "task_id": "idyll-explorer-v2",
+      "title": "Task 02 \u2014 Linked sales explorer",
+      "file": "idyll/task2_answer.idyll",
+      "sha256": "40bfc8e73b0157141be88f38194026d4caec0bfdd22d4553f7b7b78522e0e924",
+      "http_status": 200,
+      "compiled": true,
+      "passed": true,
+      "passed_count": 5,
+      "total_count": 5,
+      "checks": [
+        {
+          "id": "controls",
+          "label": "Bound category and sales-threshold controls",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "views",
+          "label": "Linked table and point chart",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "filtered-views",
+          "label": "Table and chart apply both filters for every control combination",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "summary",
+          "label": "Reactive record count, total, and average",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "empty-state",
+          "label": "Empty results clear both views and show the required message",
+          "passed": true,
+          "message": "Requirement satisfied."
+        }
+      ]
+    },
+    {
+      "dsl": "idyll",
+      "level": 3,
+      "task_id": "idyll-story-v2",
+      "title": "Task 03 \u2014 Scroll-driven sales story",
+      "file": "idyll/task3_answer.idyll",
+      "sha256": "ab4e022238795cbd535f703078e7960d4e67dad8b8162fd376432dfa5da0a368",
+      "http_status": 200,
+      "compiled": true,
+      "passed": true,
+      "passed_count": 4,
+      "total_count": 4,
+      "checks": [
+        {
+          "id": "controls",
+          "label": "Bound category and sales-threshold controls",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "story-layout",
+          "label": "Four scroll steps with a pinned interactive chart",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "stage-display",
+          "label": "Reactive stage name in the pinned region",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "story-states",
+          "label": "Chart behavior across categories, thresholds, and forward/reverse stages",
+          "passed": true,
+          "message": "Requirement satisfied."
+        }
+      ]
+    },
+    {
+      "dsl": "penrose",
+      "level": 1,
+      "task_id": "penrose-nested-v1",
+      "title": "Task 01 \u2014 Nested sets",
+      "file": "penrose/task1_answer.substance",
+      "sha256": "b9eddc4cabea96f608f17b1a3612796126b71bd6f0fb25c220f2e7237059e125",
+      "http_status": 200,
+      "compiled": true,
+      "passed": true,
+      "passed_count": 4,
+      "total_count": 4,
+      "checks": [
+        {
+          "id": "objects",
+          "label": "Required typed objects",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "labels",
+          "label": "Labels on all requested objects",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "Subset-A-B",
+          "label": "Subset(A, B)",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "Subset-B-C",
+          "label": "Subset(B, C)",
+          "passed": true,
+          "message": "Requirement satisfied."
+        }
+      ]
+    },
+    {
+      "dsl": "penrose",
+      "level": 2,
+      "task_id": "penrose-overlap-v1",
+      "title": "Task 02 \u2014 Overlapping sets",
+      "file": "penrose/task2_answer.substance",
+      "sha256": "df6c5fadf20d9c13736ba4a00a21a6ec8bd61b203199773932b780c7b0830c74",
+      "http_status": 200,
+      "compiled": true,
+      "passed": true,
+      "passed_count": 5,
+      "total_count": 5,
+      "checks": [
+        {
+          "id": "objects",
+          "label": "Required typed objects",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "labels",
+          "label": "Labels on all requested objects",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "Intersecting-A-B",
+          "label": "Intersecting(A, B)",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "Disjoint-A-C",
+          "label": "Disjoint(A, C)",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "Disjoint-B-C",
+          "label": "Disjoint(B, C)",
+          "passed": true,
+          "message": "Requirement satisfied."
+        }
+      ]
+    },
+    {
+      "dsl": "penrose",
+      "level": 3,
+      "task_id": "penrose-points-v1",
+      "title": "Task 03 \u2014 Points and sets",
+      "file": "penrose/task3_answer.substance",
+      "sha256": "6ad75e30fa08951c9b7892317670cdfb63a58ce4401fad9d6d4231accb7ebd21",
+      "http_status": 200,
+      "compiled": true,
+      "passed": true,
+      "passed_count": 7,
+      "total_count": 7,
+      "checks": [
+        {
+          "id": "objects",
+          "label": "Required typed objects",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "labels",
+          "label": "Labels on all requested objects",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "Disjoint-A-B",
+          "label": "Disjoint(A, B)",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "In-p-A",
+          "label": "In(p, A)",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "NotIn-p-B",
+          "label": "NotIn(p, B)",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "In-q-B",
+          "label": "In(q, B)",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "NotIn-q-A",
+          "label": "NotIn(q, A)",
+          "passed": true,
+          "message": "Requirement satisfied."
+        }
+      ]
+    },
+    {
+      "dsl": "vega-lite",
+      "level": 1,
+      "task_id": "vega-lite-bar-v1",
+      "title": "Task 01 \u2014 Bar chart",
+      "file": "vegalite/task1_answer.json",
+      "sha256": "a7aded7dbb7cfe02dd619b313f80dcb7bc2294a3d221862d87a612eb827f0ffb",
+      "http_status": 200,
+      "compiled": true,
+      "passed": true,
+      "passed_count": 4,
+      "total_count": 4,
+      "checks": [
+        {
+          "id": "compiles",
+          "label": "Chart compiles and executes",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "mark",
+          "label": "Required chart type",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "data",
+          "label": "Required data and visual encodings",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "titles",
+          "label": "Chart and axis titles",
+          "passed": true,
+          "message": "Requirement satisfied."
+        }
+      ]
+    },
+    {
+      "dsl": "vega-lite",
+      "level": 2,
+      "task_id": "vega-lite-line-v1",
+      "title": "Task 02 \u2014 Line chart",
+      "file": "vegalite/task2_answer.json",
+      "sha256": "50f4a83e5ce4f4f99d91caa0308cf75542a5eed5409d3ba593370ba120b56311",
+      "http_status": 200,
+      "compiled": true,
+      "passed": true,
+      "passed_count": 4,
+      "total_count": 4,
+      "checks": [
+        {
+          "id": "compiles",
+          "label": "Chart compiles and executes",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "mark",
+          "label": "Required chart type",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "data",
+          "label": "Required data and visual encodings",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "titles",
+          "label": "Chart and axis titles",
+          "passed": true,
+          "message": "Requirement satisfied."
+        }
+      ]
+    },
+    {
+      "dsl": "vega-lite",
+      "level": 3,
+      "task_id": "vega-lite-scatter-v1",
+      "title": "Task 03 \u2014 Scatterplot",
+      "file": "vegalite/task3_answer.json",
+      "sha256": "05a4c69b77539253acf39c24ea2d13e7a321731f7bcb67d6f709aff022d56e82",
+      "http_status": 200,
+      "compiled": true,
+      "passed": true,
+      "passed_count": 4,
+      "total_count": 4,
+      "checks": [
+        {
+          "id": "compiles",
+          "label": "Chart compiles and executes",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "mark",
+          "label": "Required chart type",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "data",
+          "label": "Required data and visual encodings",
+          "passed": true,
+          "message": "Requirement satisfied."
+        },
+        {
+          "id": "titles",
+          "label": "Chart and axis titles",
+          "passed": true,
+          "message": "Requirement satisfied."
+        }
+      ]
+    }
+  ]
+}
