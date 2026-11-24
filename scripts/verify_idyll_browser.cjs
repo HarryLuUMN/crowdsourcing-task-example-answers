@@ -117,9 +117,9 @@ async function main() {
         assert.deepEqual(await chartRows('data-chart-data'), expected);
         assert.deepEqual(await evaluate("[...document.querySelectorAll('tbody tr')].map(row=>JSON.parse(row.dataset.record))", preview), expected);
         const total = expected.reduce((sum, row) => sum + row.sales, 0);
-        assert.equal(Number(await evaluate("document.querySelector('[role=count]').textContent", preview)), expected.length);
-        assert.equal(Number(await evaluate("document.querySelector('[role=total]').textContent", preview)), total);
-        const average = await evaluate("document.querySelector('[role=average]').textContent", preview);
+        assert.equal(Number(await evaluate("document.querySelectorAll('#article .idyll-display')[0].textContent", preview)), expected.length);
+        assert.equal(Number(await evaluate("document.querySelectorAll('#article .idyll-display')[1].textContent", preview)), total);
+        const average = await evaluate("document.querySelectorAll('#article .idyll-display')[2].textContent", preview);
         if (expected.length) assert.ok(Math.abs(Number(average) - total / expected.length) < 0.011);
         else assert.equal(average, '—');
         assert.equal(await evaluate("document.querySelector('#article').innerText.includes('No matching records.')", preview), !expected.length);
@@ -151,7 +151,7 @@ async function main() {
     assert.ok(Math.abs(pinBefore - pinAfter) < 2, 'Pinned chart must stay visible while scrolling');
     await scrollToStep(3);
     assert.deepEqual(await chartRows('data-chart-highlight'), selected.filter(row=>row.sales>150));
-    assert.equal(await evaluate("document.querySelector('[role=stage]').textContent", preview), 'Threshold');
+    assert.equal(await evaluate("document.querySelector('.idyll-pinned .idyll-display').textContent", preview), 'Threshold');
     await setControl('input[type=range]', 190);
     assert.deepEqual(await chartRows('data-chart-highlight'), []);
     await scrollToStep(2);
