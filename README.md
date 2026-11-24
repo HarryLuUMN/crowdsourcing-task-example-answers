@@ -39,3 +39,9 @@ Prepare the platform's documented Python and Node environments, then run this re
 The verifier reads the actual answer files, checks that their IDs match the platform's complete current catalog, runs every real compiler/runtime and checker, and exits unsuccessfully if any answer fails. It does not change the platform's checkers. [validation-report.json](validation-report.json) records the platform commit, per-file SHA-256 hashes, and individual check results from the most recent recorded run.
 
 Browser interaction verification is recorded separately in [browser-validation.md](browser-validation.md). Passing compiler/model checks and passing actual browser interactions are distinct evidence; a static check report alone does not establish scroll or rendering behavior.
+
+## Recorded validation results
+
+- All 12 answer files compiled and passed all 57 individual platform checks.
+- All three Idyll answers passed real browser interaction tests, including 16 explorer control combinations and forward/reverse story scrolling.
+- Answer SHA-256 hashes are recorded in both reports so evidence can be matched to these exact files.

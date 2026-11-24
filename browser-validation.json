@@ -1,0 +1,41 @@
+{
+  "verified_at_utc": "2026-11-24T19:28:08.530Z",
+  "platform_commit": "95692d6bba95f7298734aa701e34adfe0ebe0035",
+  "passed": true,
+  "files": [
+    {
+      "file": "idyll/task1_answer.idyll",
+      "sha256": "d778990cf440535c0e0696318cd5ec752d0d0041f60b80b42f4e803affd39f35"
+    },
+    {
+      "file": "idyll/task2_answer.idyll",
+      "sha256": "40bfc8e73b0157141be88f38194026d4caec0bfdd22d4553f7b7b78522e0e924"
+    },
+    {
+      "file": "idyll/task3_answer.idyll",
+      "sha256": "ab4e022238795cbd535f703078e7960d4e67dad8b8162fd376432dfa5da0a368"
+    }
+  ],
+  "explorer_control_combinations": 16,
+  "story_stages": [
+    0,
+    1,
+    2,
+    3,
+    2,
+    1,
+    0
+  ],
+  "checks": [
+    "calculator reactive output",
+    "linked table and chart",
+    "summary values",
+    "empty results",
+    "scroll stage mapping",
+    "monthly reference averages",
+    "strict threshold highlights",
+    "pinned geometry",
+    "control persistence",
+    "sandbox networking blocked"
+  ]
+}
